@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import foto from './assets/foto.jpeg';
 
@@ -33,9 +31,24 @@ function App() {
   // )
   return (
     <div className="App">
-      <p>È con grandissima gioia che</p>
-      <h1>Nicola e Lorena</h1>
-      <p style={{ marginBottom: "5rem" }}>e le loro famiglie vi invitano al loro matrimonio</p>
+      <div className="container" style={{ marginBottom: "2rem"}}>
+        <p>È con grandissima gioia che</p>
+        <h1 style={{fontFamily: "Great Vibes"}}>Nicola e Lorena</h1>
+        <p>e le loro famiglie</p>
+        <p>vi invitano al loro matrimonio</p>
+        <p style={{fontFamily: 'Satisfy'}}>
+          4 settembre 2025
+          <br/>
+          ore 16:00
+        </p>
+        <p style={{ marginBottom: "2rem", fontFamily: 'Playfair Display'}}>
+          <a href="https://maps.app.goo.gl/brCmg2hXxM8nvtnZ7" target="_blank" rel="noopener noreferrer">
+            Villa Vittoria
+            <br/>
+            Via Cifelli, 44 - Boscotrecase (Na)
+          </a>
+        </p>
+      </div>
       <img src={foto} alt="Proposta di matrimonio di Nicola e Lorena" width="300" />
     </div>
   );
