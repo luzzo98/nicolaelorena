@@ -71,16 +71,16 @@ p {
 /* Media Query per dispositivi mobili */
 @media (max-width: 768px) {
   .container {
-    width: 70%; /* Aumenta la larghezza su dispositivi mobili */
+    width: 80%; /* Aumenta la larghezza su dispositivi mobili */
     padding: 2rem; /* Riduce un po' il padding per adattarsi meglio */
   }
 
   h1 {
-    font-size: 2.5em; /* Riduce la dimensione del titolo su schermi piccoli */
+    font-size: 3.0em; /* Riduce la dimensione del titolo su schermi piccoli */
   }
 
   p {
-    font-size: 1em; /* Riduce la dimensione del testo su schermi piccoli */
+    font-size: 1.3em; /* Riduce la dimensione del testo su schermi piccoli */
   }
 }
 
