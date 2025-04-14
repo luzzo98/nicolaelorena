@@ -36,7 +36,9 @@ function App() {
       <p>È con grandissima gioia che</p>
       <h1>Nicola e Lorena</h1>
       <p>e le loro famiglie vi invitano al loro matrimonio</p>
+      <p>.</p>
       <p></p>
+      <p>.</p>
       <img src={foto} alt="Proposta di matrimonio di Nicola e Lorena" width="300" />
     </div>
   );
