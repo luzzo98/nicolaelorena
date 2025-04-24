@@ -4,119 +4,38 @@
   /* font-family: "Dancing Script", cursive; */
   /* font-family: "Great Vibes", cursive; */
   /* font-family: "Satisfy", cursive; */
-  font-family: "Cormorant Garamond", serif;
-
+  /* font-family: "Cormorant Garamond", Georgia, serif; */
+  text-align: center;
   line-height: 1.5;
-  font-weight: 400;
-
-  /* testo bianco e sfondo nero */
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
-  /* testo nero e sfondo bianco */
-  color: #000;
   background-color: #fff;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* immagine sfondo */
+html, body {
   background-image: url('/img/nosy-iranja.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-/* Riquadro bianco */
-.container {
-  background-color: rgba(255, 255, 255, 0.95); /* Bianco con leggera trasparenza */
-  padding: 2rem; /* Distanza dal bordo */
-  border-radius: 10px; /* Angoli arrotondati */
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto; /* Centra il contenuto */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Leggera ombra per evidenziare il box */
-}
-
-h1 {
-  font-size: 4.2em;
-  line-height: 1.1;
-}
-
-p {
-  font-size: 1.7em;
-  color: #333;
-}
-
-/* Media Query per dispositivi mobili */
-@media (max-width: 768px) {
-  .container {
-    width: 80%; /* Aumenta la larghezza su dispositivi mobili */
-    padding: 2rem; /* Riduce un po' il padding per adattarsi meglio */
-  }
-
-  h1 {
-    font-size: 3.0em; /* Riduce la dimensione del titolo su schermi piccoli */
-  }
-
-  p {
-    font-size: 1.3em; /* Riduce la dimensione del testo su schermi piccoli */
-  }
-}
-
-
-
-
-
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+a {
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /* color: #646cff; */
+  color: #0e8bc1;
+  text-decoration: none;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+a:hover {
+  /* color: #4a53f4; */
+  color: #036c99;
+}
