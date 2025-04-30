@@ -1,8 +1,11 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import foto from './assets/foto.jpeg';
+import fotoloc from './assets/location.jpg'
 
 function App() {
+  const [mostraDettagli, setMostraDettagli] = useState(false);
+
   return (
     <div>
       {/* Primo blocco invito */}
@@ -56,6 +59,51 @@ function App() {
           />
         </div>
       </div>
+
+      {/* terzo blocco */}
+      <div className="barra-bianca"></div>
+      <div className="contenuto-extra">
+        <div className="sezione-foto-testo">
+          <div className="foto-box">
+            <img src={fotoloc} alt="Descrizione" className="immagine-extra" />
+          </div>
+          <div className="testo-box">
+            <div className='testo-extra'>
+              <h2>Lista nozze</h2>
+              <p>
+              Non c’è gioia più grande che poter condividere la nostra felicità con Voi, che ci avete visto crescere, ci avete sostenuto e, siamo certi, continuerete ad accompagnarci in questo percorso.
+              Festeggiare insieme questo giorno sarà per noi il dono più bello!
+              Qualora desideriate contribuire alla realizzazione dei nostri sogni, lo potrete fare dedicandoci un vostro pensiero che sarà per noi un grande regalo.
+              </p>
+              <button className="btn-toggle-dettagli" onClick={() => setMostraDettagli(!mostraDettagli)}>
+                🎁✈️
+              </button>
+              {mostraDettagli && (
+                <div className="dettagli-iban">
+                  <h3>IBAN</h3>
+                  <h4>IT79Q0873137331000000070174</h4>
+                  <h5>Intestato a: Goffi Nicola</h5>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="barra-bianca2"></div>
+
+      {/* ultimo blocco */}
+      <footer className="footer-contatti">
+        <div className="contatto">
+          <img src="/img/telephone.png" alt="Telefono" className="icona" />
+          <h2>Nicola</h2>
+          <p><a href="tel:+393663049019">+39 366 304 9019</a></p>
+        </div>
+        <div className="contatto">
+          <img src="/img/telephone.png" alt="Telefono" className="icona" />
+          <h2>Lorena</h2>
+          <p><a href="tel:+393342289857">+39 334 228 9857</a></p>
+        </div>
+      </footer>
     </div>
   );
 }

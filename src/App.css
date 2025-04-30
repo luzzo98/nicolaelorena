@@ -140,3 +140,183 @@ p {
     padding: 3rem 0;
   }
 }
+
+
+/* terzo blocco */
+.barra-bianca {
+  height: 3.8rem;
+  background-color: white;
+  width: 100%;
+}
+
+.contenuto-extra {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.immagine-extra {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.testo-extra {
+  font-size: 1.4em;
+  color: #333;
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Blocco immagine + testo ---------------------------------------- */
+.sezione-foto-testo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Immagine */
+.foto-box {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.immagine-extra {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* Testo */
+.testo-box {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: #333;
+}
+
+.testo-extra h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2.2em;
+  margin-bottom: 1rem;
+}
+
+.testo-extra p {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.testo-extra h4 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+}
+
+.testo-extra h5 {
+  font-size: 1.4rem;
+}
+
+/* pulsante */
+.btn-toggle-dettagli {
+  background-color: #17b7ed;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-toggle-dettagli:hover {
+  background-color: #0e8bc1;
+}
+
+.dettagli-iban {
+  margin-top: 1.8rem;
+}
+
+/* Layout desktop */
+@media (min-width: 1024px) {
+  .sezione-foto-testo {
+    flex-direction: row;
+    height: 500px;
+  }
+
+  .foto-box, .testo-box {
+    width: 50%;
+    height: 100%;
+  }
+
+  .foto-box {
+    height: 100%;
+  }
+
+  .immagine-extra {
+    height: 100%;
+  }
+
+  .testo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .testo-extra {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+}
+
+/* ultimo blocco */
+.footer-contatti {
+  background-color: #e0f5ff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  text-align: center;
+  gap: 1.5rem;
+  color: #333;
+}
+
+.contatto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icona {
+  font-size: 1.8rem;
+}
+
+.footer-contatti a {
+  color: #0e8bc1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Layout desktop: affianca i blocchi ma lascia il contenuto interno in colonna */
+@media (min-width: 768px) {
+  .footer-contatti {
+    padding-top: 3rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contatto {
+    flex: 1;
+  }
+
+  .barra-bianca2 {
+    height: 4.4rem;
+    background-color: white;
+    width: 100%;
+  }
+}
