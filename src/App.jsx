@@ -75,6 +75,7 @@ function App() {
               Festeggiare insieme questo giorno sarà per noi il dono più bello!
               Qualora desideriate contribuire alla realizzazione dei nostri sogni, lo potrete fare dedicandoci un vostro pensiero che sarà per noi un grande regalo.
               </p>
+              <h5>CLICCA QUI SOTTO</h5>
               <button className="btn-toggle-dettagli" onClick={() => setMostraDettagli(!mostraDettagli)}>
                 🎁✈️
               </button>

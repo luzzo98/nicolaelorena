@@ -75,9 +75,6 @@ p {
   font-size: 1em;
   transition: background-color 0.3s ease;
 }
-.cta-button:hover {
-  background-color: #555;
-}
 
 .cta-img-container {
   width: 100%;
@@ -206,7 +203,7 @@ p {
 }
 
 .testo-extra p {
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   font-size: 1.4rem;
   line-height: 1.6;
 }
@@ -233,8 +230,10 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.btn-toggle-dettagli:hover {
-  background-color: #0e8bc1;
+@media (hover: hover) {
+  .btn-toggle-dettagli:hover {
+    background-color: #1baae7;
+  }
 }
 
 .dettagli-iban {
