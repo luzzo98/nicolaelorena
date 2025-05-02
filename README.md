@@ -96,6 +96,8 @@ Esempio reale usato in questo progetto:
 
 > 🔍 Il campo `"homepage"` è fondamentale per far funzionare GitHub Pages: assicurati che punti all'URL corretto del tuo sito (senza slash finale!).
 
+Anche se il codice viene modificato nel branch principale  `main`, GitHub Pages usa un branch dedicato chiamato gh-pages dove viene caricato il sito finale (dalla cartella dist/) ed il comando `npm run deploy` (grazie alla libreria gh-pages) crea o aggiorna automaticamente questo branch.
+
 ### ⚙️ Configurazione `vite.config.js`
 
 Nel caso di **dominio personalizzato**, **non è necessario** impostare `base`.  
